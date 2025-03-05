@@ -1,0 +1,114 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+.DS_Store
+
+# YOLO files
+yolo/*.weights
+yolo/*.cfg
+yolo/*.names
+yolo/backup/
+*.weights
+*.cfg
+*.names
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Project specific
+temp/
+output/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.h264
+captures/
+results/
+
+# System specific
+.Xauthority
+.bash_history
+.cache/
+.local/
+
+# Temporary files
+*.tmp
+*.temp
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Debug files
+debug/
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Miscellaneous
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

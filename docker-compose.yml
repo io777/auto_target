@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  object_detection:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: object_detection
+    environment:
+      - DISPLAY=:0
+      - PYTHONUNBUFFERED=1
+      - QT_X11_NO_MITSHM=1
+      - CAMERA_INDEX=0
+    volumes:
+      - ./app:/app
+      - ./yolo:/app/yolo
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+    devices:
+      - /dev/video0:/dev/video0
+    privileged: true
+    network_mode: host
