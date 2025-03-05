@@ -21,3 +21,19 @@ make restart # Перезапуск контейнера
 # Полная очистка
 
 make clean # Удаление всех ресурсов
+
+# Статус контейнера
+
+docker ps
+
+# Использование ресурсов
+
+docker stats object_detection
+
+# Проверка доступа к камере
+
+v4l2-ctl --list-devices
+
+# Проверка X11
+
+xhost | grep local:docker
